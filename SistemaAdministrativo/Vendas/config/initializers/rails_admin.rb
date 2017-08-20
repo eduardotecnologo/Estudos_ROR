@@ -1,14 +1,8 @@
 RailsAdmin.config do |config|
 
-  # Nome da Empresa
-config.main_app_name = ["Isis Confecções", "Administrativo"]
+  require Rails.root.join('lib', 'rails_admin', 'rails_admin_pdf.rb')
+  RailsAdmin::Config::Actions.register(RailsAdmin::Config::Actions::Pdf)
 
-# Link do Desenvolvedor
-  config.navigation_static_links = {
-    'Suport: Ctk Soluções em TI' => 'http://ctksolucoes.com.br/'
-  }
-# Links Úteis
-config.navigation_static_label = "Links Úteis"
   ### Popular gems integration
 
   ## == Devise ==
@@ -24,13 +18,22 @@ config.navigation_static_label = "Links Úteis"
   # config.authorize_with :pundit
 
   ## == PaperTrail ==
-  # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail >= 3.0.0
+  # config.audit_with :paper_trail, 'User', 'PaperTrail::Version' # PaperTrail = 3.0.0
 
   ### More at https://github.com/sferik/rails_admin/wiki/Base-configuration
 
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
   # config.show_gravatar true
+
+ # Link do Desenvolvedor
+  config.navigation_static_links = {
+    'Suport: Ctk Soluções em TI' => 'http://ctksolucoes.com.br/'
+  }
+
+  config.navigation_static_label = "Lins Úteis"
+
+  config.main_app_name = ["Representantes Comerciais", ""]
 
   config.model Sale do
     navigation_icon 'fa fa-money'
@@ -112,31 +115,24 @@ config.navigation_static_label = "Links Úteis"
     end
   end
 
+
   config.model Discount do
-  parent Product
-end
+    parent Product
+  end
 
-config.model Sale do
-  parent User
-  weight -2
-end
+  config.model Sale do
+    parent User
+    weight -2
+  end
 
-config.model Comission do
-  parent User
-  weight -1
-end
+  config.model Comission do
+    parent User
+    weight -1
+  end
 
-config.model Client do
-  parent User
-end
-
-config.model ProductQuantity do
-  visible false
-end
-
-config.model Address do
-  visible false
-end
+  config.model Client do
+    parent User
+  end
 
   config.model ProductQuantity do
     visible false
@@ -171,6 +167,9 @@ end
     edit
     delete
     show_in_app
+    pdf do
+      only User
+    end
 
     ## With an audit adapter, you can add:
     # history_index

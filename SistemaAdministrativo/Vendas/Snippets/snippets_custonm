@@ -198,150 +198,6 @@ pt-BR:
         default_col_sep: ","
         col_sep: "Separador de colunas"
         col_sep_help: "Deixar em branco para usar omissão ('%{value}')" # value is default_col_sep
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
-60
-61
-62
-63
-64
-65
-66
-67
-68
-69
-70
-71
-72
-73
-74
-75
-76
-77
-78
-79
-80
-81
-82
-83
-84
-85
-86
-87
-88
-89
-90
-91
-92
-93
-94
-95
-96
-97
-98
-99
-100
-101
-102
-103
-104
-105
-106
-107
-108
-109
-110
-111
-112
-113
-114
-115
-116
-117
-118
-119
-120
-121
-122
-123
-124
-125
-126
-127
-128
-129
-130
-131
-132
-133
-134
-135
-136
-137
-138
-139
-140
-141
-142
-143
-144
 pt-BR:
   datetime:
     distance_in_words:
@@ -549,49 +405,6 @@ pt-BR:
       not_saved:
         one: "Não foi possível salvar %{resource}: 1 erro"
         other: "Não foi possível salvar %{resource}: %{count} erros."
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-
-29
-30
-31
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56
-57
-58
-59
 pt-BR:
   devise:
     confirmations:
@@ -692,31 +505,6 @@ end
 config.model Address do
   visible false
 end
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
 config.model Discount do
   parent Product
 end
@@ -804,38 +592,7 @@ $(function () {
 
   for (var i = 0; i <= array_menu.length; i++) {
     $('.sub-menu-' + i).wrapAll("
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26
-27
-28
-29
-30
-31
-32
+
 $(document).on('ready pjax:success', function() {
   handleActiveBase();
   function handleActiveBase() {
@@ -894,31 +651,6 @@ $(function () {
     $(this).next('.sub-menu-container').stop().slideDown();
   });
 });
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
 ");
   }
  
@@ -947,7 +679,7 @@ $(function () {
 Agora para customizar a Gem que usamos para dar a aparência do nosso Admin, siga os passos:Fora do seu projeto no console, rode:
 
 git clone git@github.com:rollincode/rails_admin_theme.git
-1
+
 git clone git@github.com:rollincode/rails_admin_theme.git
 Dentro da pasta do projeto que você baixou substitua o conteúdo do arquivo desse path “vendor/assets/stylesheets/rails_admin/themes/rollincode/variables.scss” pelo conteúdo a báixo:
 
@@ -971,10 +703,7 @@ git add .
 git commit -m 'My customized version os colors'
 git remote set-url origin URL_GIT_DO_SEU_REPOSITÓRIO
 git push origin master
-1
-2
-3
-4
+
 git add .
 git commit -m 'My customized version os colors'
 git remote set-url origin URL_GIT_DO_SEU_REPOSITÓRIO
@@ -983,6 +712,4 @@ Agora de volta ao seu Projeto Admin, no seu Gemfile altere a gem “rails_admin_
 
 Ruby
 
-gem 'rails_admin_rollincode', :git => 'URL_GIT_DO_SEU_REPOSITÓRIO'
-1
 gem 'rails_admin_rollincode', :git => 'URL_GIT_DO_SEU_REPOSITÓRIO'
