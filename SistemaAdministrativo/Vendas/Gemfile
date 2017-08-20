@@ -27,6 +27,10 @@ gem 'rails_admin'
 gem 'devise'
 # GEM CANCANCAN
 gem 'cancancan'
+# GEM UPLOAD DE FOTOS
+gem 'carrierwave'
+# GEM TEMA
+gem 'rails_admin_rollincode', :git => 'https://github.com/eduardotecnologo/rollincode_custom_adm.git'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
