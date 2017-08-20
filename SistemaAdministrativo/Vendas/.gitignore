@@ -19,3 +19,8 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Ignore Snipets
+/.snippets
+/.snippets_custonm
+/.snippets_pdf

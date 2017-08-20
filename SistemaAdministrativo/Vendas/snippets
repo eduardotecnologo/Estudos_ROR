@@ -454,3 +454,4 @@ Adicionar ao arquivo: /app/models/product.rb
 
 Ruby
 nt_uploader :photo, PhotoUploader
+
