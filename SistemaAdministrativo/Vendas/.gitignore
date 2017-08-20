@@ -21,6 +21,4 @@
 .byebug_history
 
 # Ignore Snipets
-/.snippets
-/.snippets_custonm
-/.snippets_pdf
+.Snippets/
