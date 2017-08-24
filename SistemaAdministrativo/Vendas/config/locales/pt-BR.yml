@@ -12,6 +12,9 @@ pt-BR:
       sale:
         one: Venda
         other: Vendas
+      product:
+      one: Produto
+      other: Produtos
     attributes:
       client:
         name: "Nome"

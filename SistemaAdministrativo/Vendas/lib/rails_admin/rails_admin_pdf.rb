@@ -3,7 +3,7 @@ end
 
 require 'rails_admin/config/actions'
 require 'prawn'
-require 'gruff'
+#require 'gruff'
 
 module RailsAdmin
   module Config

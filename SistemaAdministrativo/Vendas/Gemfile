@@ -29,7 +29,7 @@ gem 'carrierwave'
 # Gem para gerar os pdfs
 gem 'prawn-rails'
 # Gem para gerar os gráficos
-gem 'gruff'
+#gem 'gruff'
 
 gem 'rails_admin_rollincode', :git => 'https://github.com/eduardotecnologo/rollincode_custom_adm.git'
 
